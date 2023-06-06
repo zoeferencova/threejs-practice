@@ -33,7 +33,7 @@ renderer.setSize(sizes.width, sizes.height)
 // Clock (do not use getDelta method)
 const clock = new THREE.Clock()
 
-// Using GSAP
+// Using GSAP (green sock)
 gsap.to(mesh.position, { duration: 1, delay: 1, x: 2 })
 gsap.to(mesh.position, { duration: 1, delay: 2, x: 0 })
 
