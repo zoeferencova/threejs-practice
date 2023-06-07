@@ -55,7 +55,7 @@ const controls = new OrbitControls(camera, canvas)
 // controls.target.y = 2 // Move camera perspective up
 // controls.update()
 
-controls.enableDamping = true
+controls.enableDamping = true // Creates smooth effect
 
 // Renderer
 const renderer = new THREE.WebGLRenderer({
@@ -78,7 +78,7 @@ const tick = () => {
     // camera.position.y = cursor.y * 5
     // camera.lookAt(mesh.position)
 
-    // Update controls
+    // Update controls: allows damping to be applied continuously
     controls.update()
 
     // Render
